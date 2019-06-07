@@ -1,0 +1,14 @@
+# ignore node dependency directories
+node_modules/
+
+# Desktop Services Store (osx)
+.DS_Store
+
+# logs
+*.log
+
+# Yarn
+yarn.lock
+
+# Public generated assets
+public/
