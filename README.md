@@ -14,7 +14,7 @@
 | ------------- | ------------- |
 | `yarn start`  | Start the bundler with hot reloading  |
 | `yarn build`  | Bundle the website in production mode  |
-| `yarn dev  | Bundle the website in dev mode  |
+| `yarn dev`  | Bundle the website in dev mode  |
 
 ### Features
 
