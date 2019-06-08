@@ -22,6 +22,9 @@
 
 - [Babel 7](https://babeljs.io/learn-es2015/) for JavaScript
 - [Sass](http://sass-lang.com/) preprocessor for CSS
+- Really basic simple sass mixins including:
+   + [font-face](https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6) Import font easily
+   + [sass-mq](https://github.com/sass-mq/sass-mq) A famous mq utily developed by The Guardian and the one I used every time
 - [Webpack 4](https://webpack.js.org/) for managing, compiling and optimizing theme's asset files
 - [BrowsersSync](https://github.com/Va1/browser-sync-webpack-plugin) for live reload the website during the dev
 - [jQuery](https://jquery.com/) Already integrated as global
