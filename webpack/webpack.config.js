@@ -49,7 +49,9 @@ module.exports = {
     }),
     new webpack.LoaderOptionsPlugin({ minimize: !isdev }),
     new MiniCssExtractPlugin(config.outputs.css),
-    new CleanWebpackPlugin({ root: config.paths.root }),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false,
+    }),
     new CopyPlugin([{
       context: config.paths.images,
       from: {
@@ -65,9 +67,7 @@ module.exports = {
 if (config.settings.browserSync) {
   module.exports.plugins.push(
     new BrowserSyncPlugin(config.settings.browserSync, {
-      // Prevent BrowserSync from reloading the page
-      // and let Webpack Dev Server take care of this.
-      reload: false,
+      reload: true,
     })
   );
 }
