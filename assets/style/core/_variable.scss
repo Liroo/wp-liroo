@@ -1,0 +1,16 @@
+/*
+   Mq mixins
+*/
+$mq-responsive: true;
+$mq-breakpoints: (
+  mobile:   320px,
+  tablet:   768px,
+  laptop:   1024px,
+  desktop:  1280px,
+  wide:     1440px,
+);
+$mq-static-breakpoint: desktop;
+$mq-show-breakpoints: (mobile, tablet, laptop, desktop, wide);
+
+
+$transition-duration: 0.3s;

@@ -1,0 +1,31 @@
+/*
+  Variable first
+*/
+@import './core/variable';
+/*
+  Mixins
+*/
+@import './mixins/mq',
+        './mixins/font-face';
+
+/*
+  Core
+*/
+@import './core/normalize',
+        './core/global';
+
+/*
+  Those one are example
+*/
+
+/*
+  Page
+*/
+// @import './page/about',
+//         './page/home';
+
+/*
+  Components
+*/
+// @import './components/header',
+//         './components/footer';
