@@ -19,7 +19,6 @@ const config = require('./app.config');
 module.exports = {
   mode: isdev ? 'development' : 'production',
   devtool: (isdev && config.settings.sourceMaps) ? config.settings.sourceMaps : false,
-  bail: !isdev,
   entry: config.assets,
   output: {
     path: config.paths.public,
