@@ -19,18 +19,24 @@ const config = require('./app.config');
 module.exports = {
   mode: isdev ? 'development' : 'production',
   devtool: (isdev && config.settings.sourceMaps) ? config.settings.sourceMaps : false,
+  devServer: {
+    hot: true,
+  },
+
   entry: config.assets,
   output: {
     path: config.paths.public,
     filename: config.outputs.javascript.filename,
   },
   resolve: config.resolve,
+
   performance: {
     hints: false,
   },
   optimization: {
     minimizer: [],
   },
+
   module: {
     rules: [
       sassRule,
@@ -41,6 +47,7 @@ module.exports = {
       externalImagesRule,
     ],
   },
+
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -87,6 +94,7 @@ if (!isdev) {
   module.exports.optimization.minimizer.push(
     new UglifyJsPlugin({
       uglifyOptions: {
+        parallel: true,
         extractComments: isdev,
         sourceMap: isdev,
       },

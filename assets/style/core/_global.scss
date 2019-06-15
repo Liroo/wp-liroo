@@ -2,8 +2,8 @@
   Use mixin font face like this
   https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 */
-// @include font-face(Lausanne, '/static/fonts/Lausanne-300', 300, normal, eot ttf woff woff2);
-// @include font-face(Lausanne, '/static/fonts/Lausanne-300Italic', 300, italic, eot ttf woff woff2);
+// @include font-face(Lausanne, '../fonts/Lausanne-300', 300, normal, eot ttf woff woff2);
+// @include font-face(Lausanne, '../fonts/Lausanne-300Italic', 300, italic, eot ttf woff woff2);
 
 body {
   // font-family: Lausanne, sans-serif !important;
@@ -36,7 +36,7 @@ a {
   }
 }
 
-h1, h2, p {
+h1, h2, h3, h4, h5, h6, p {
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
