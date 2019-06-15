@@ -1,33 +1,11 @@
-<?php 
+<?php
 
 /*
-	Remove those menu
+	Require every files from ./inc/
 */
-function setup() {
-	remove_menu_page( 'index.php' );
-	remove_menu_page( 'post-new.php' );
-	remove_menu_page( 'edit.php' );
-	remove_menu_page( 'edit.php?post_type=page' );
-	remove_menu_page( 'edit-comments.php' );
-
-	remove_menu_page( 'themes.php' );
+foreach (glob(__DIR__ . "/inc/*") as $filename) {
+  if (!is_dir($filename)) {
+    require_once($filename);
+  }
 }
-add_action( 'admin_menu', 'setup' );
-
-function remove_comments(){
-	global $wp_admin_bar;
-
-	$wp_admin_bar->remove_menu('comments');
-
-	$wp_admin_bar->remove_menu('new-post');
-	$wp_admin_bar->remove_menu('new-page');
-}
-add_action( 'wp_before_admin_bar_render', 'remove_comments' );
-
-/*
-	Theme assets
-*/
-add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('theme-css', get_template_directory_uri() . "/public/css/app.css", false, null);
-    wp_enqueue_script('theme-js', get_template_directory_uri() . "/public/js/app.js", Array(), null, true);
-}, 100);
+add_theme_support( 'post-thumbnails' );
