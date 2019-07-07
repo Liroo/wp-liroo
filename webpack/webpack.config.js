@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 const sassRule = require('./rules/sass');
 const fontsRule = require('./rules/fonts');
@@ -67,6 +68,9 @@ module.exports = {
       },
       to: config.outputs.image.filename,
     }]),
+    new WebpackAssetsManifest({
+      publicPath: true,
+    }),
   ],
 }
 
