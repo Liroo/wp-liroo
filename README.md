@@ -28,6 +28,7 @@
 - [Webpack 4](https://webpack.js.org/) for managing, compiling and optimizing theme's asset files
 - [BrowsersSync](https://github.com/Va1/browser-sync-webpack-plugin) for live reload the website during the dev
 - [jQuery](https://jquery.com/) Already integrated as global
+- [barba](https://barba.js.org/docs/v2/user/) Barba as page transition (can be removed easily if you don't want it but I used in all my project)
 - Readable and centralized Theme Configs
 
 ###### And nothing more!
