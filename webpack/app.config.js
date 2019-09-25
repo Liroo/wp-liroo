@@ -60,6 +60,9 @@ module.exports = merge({
       open: env('BROWSERSYNC_OPEN', false),
       reloadDelay: env('BROWSERSYNC_DELAY', 500),
       files: [
+        'part/**/*.php',
+        'inc/**/*.php',
+        'woocommerce/**/*.php',
         '*.php',
         'assets/js/**/*.js',
         'assets/style/**/*.{sass,scss}',

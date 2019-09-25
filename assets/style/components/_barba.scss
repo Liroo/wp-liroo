@@ -1,0 +1,12 @@
+[data-barba='wrapper'] {
+  position: relative;
+}
+
+[data-barba='container'] {
+  will-change: transform;
+  
+  .is-animating > & {
+    position: absolute;
+    width: 100%;
+  }
+}

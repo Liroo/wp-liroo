@@ -5,7 +5,7 @@ const config = require('../app.config')
  * matches fonts with version string at the end of filenames.
  */
 module.exports = {
-  test: /\.(eot|ttf|woff|woff2|svg)(\?\S*)?$/,
+  test: /\.(eot|otf|ttf|woff|woff2|svg)(\?\S*)?$/,
   include: config.paths.fonts,
   use: [{
     loader: 'file-loader',

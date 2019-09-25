@@ -5,7 +5,7 @@ const config = require('../app.config')
  * font assets of external libraries to the application.
  */
 module.exports = {
-  test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
+  test: /\.(eot|otf|woff|woff2|ttf|svg)(\?\S*)?$/,
   include: config.paths.external,
   use: [{
     loader: 'file-loader',

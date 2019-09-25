@@ -1,3 +1,6 @@
-        <?php wp_footer(); ?>
-    </body>
+<?php defined( 'ABSPATH' ) || exit; ?>
+
+    </main>
+    <?php wp_footer(); ?>
+  </body>
 </html>
