@@ -11,9 +11,6 @@ add_action('wp_enqueue_scripts', function () {
 
     wp_enqueue_style('theme-css',  $template_dir . "/public/" . $json_assets["app.css"], false, null);
     wp_enqueue_script('theme-js', $template_dir . "/public/" . $json_assets["app.js"], Array(), null, true);
-
-    wp_enqueue_script('theme-jquery-core', "https://code.jquery.com/jquery-3.4.1.min.js", Array(), null, true);
-    wp_enqueue_script('theme-jquery-migrate', "https://code.jquery.com/jquery-migrate-3.1.0.min.js", Array(), null, true);
 }, 100);
 
 /**
