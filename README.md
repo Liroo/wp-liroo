@@ -30,11 +30,12 @@
 - [jQuery](https://jquery.com/) Already integrated as global
 - [barba](https://barba.js.org/docs/v2/user/) Barba as page transition (can be removed easily if you don't want it but I used in all my project)
 - Readable and centralized Theme Configs
-
 ###### And nothing more!
 
 > Firstly because I do not want to focus this theme on especially one usage. That's why there is no pre-installed framework or useless mixins.
 > And also because I want to maintain this theme updated so no surcharge :)
+
+I recommend to use [WebP Express](https://fr.wordpress.org/plugins/webp-express/) as wordpress plugin in order to serve automaticaly webp when it's supported by the browser.
 
 ### Contributing
 
